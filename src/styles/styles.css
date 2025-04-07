@@ -4,10 +4,22 @@
   box-sizing: border-box;
 }
 
-.main-content {
+:root {
+  background-color: #f3e5c3;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Sora Variable", sans-serif;
+}
+
+.main-container {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   max-width: 1600px;
-  padding: 20px;
+}
+
+h1 {
+  margin: 0;
 }
