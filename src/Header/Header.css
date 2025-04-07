@@ -16,7 +16,7 @@
   line-height: 1;
 }
 
-.app__title {
+.title__main {
   margin: 0;
   font-size: 2rem;
   text-shadow: 2px 2px 4px #00000080;
@@ -27,7 +27,7 @@
   }
 }
 
-.app__subtitle {
+.title__secondary {
   display: block;
   text-transform: uppercase;
   font-weight: 100;
