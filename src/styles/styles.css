@@ -1,0 +1,13 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.main-content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1600px;
+  padding: 20px;
+}
