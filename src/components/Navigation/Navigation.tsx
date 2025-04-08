@@ -1,18 +1,19 @@
 import "./Navigation.css";
+import { NavLink } from "react-router";
 
 const Navigation: React.FC = () => {
   return (
     <nav>
       <ul className="navigation">
         <li>
-          <a className="navigation-link" href="/">
+          <NavLink className="navigation-link" to="/monuments">
             Monuments
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="navigation-link" href="/add-monuments">
+          <NavLink className="navigation-link" to="/add-monument">
             Add monument
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>

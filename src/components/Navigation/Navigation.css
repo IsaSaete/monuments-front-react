@@ -20,3 +20,7 @@
     box-shadow: 2px 2px 4px #00000080;
   }
 }
+
+.navigation-link.active {
+  box-shadow: 1px 1px 4px #000;
+}

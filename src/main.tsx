@@ -3,10 +3,13 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "@fontsource-variable/sora/index.css";
 import "./styles/styles.css";
-import App from "./components/App/App";
+import AppRouter from "./AppRouter";
+import { BrowserRouter } from "react-router";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   </StrictMode>,
 );
