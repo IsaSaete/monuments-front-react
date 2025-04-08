@@ -4,13 +4,10 @@
   box-sizing: border-box;
 }
 
-:root {
-  background-color: #f3e5c3;
-}
-
 body {
   margin: 0 auto;
   font-family: "Sora Variable", sans-serif;
+  background-color: #f3e5c3;
 }
 
 h1 {
