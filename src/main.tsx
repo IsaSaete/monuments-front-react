@@ -1,9 +1,12 @@
+// Supports weights 100-800
+import "@fontsource-variable/sora/index.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import App from "./App/App";
 import "./styles/styles.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <div className="main-content"></div>
-  </StrictMode>
+    <App />
+  </StrictMode>,
 );
