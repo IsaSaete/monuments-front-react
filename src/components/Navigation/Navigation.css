@@ -1,0 +1,22 @@
+.navigation {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.navigation-link {
+  color: #f3e5c3;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 200;
+  font-size: 1.4rem;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: #f3e5c3;
+    color: #174e4f;
+    box-shadow: 2px 2px 4px #00000080;
+  }
+}

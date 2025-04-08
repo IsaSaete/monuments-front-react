@@ -7,7 +7,7 @@ describe("Given the App component", () => {
       render(<App />);
 
       const appTitle = screen.queryByRole("heading", {
-        name: "Monuments of the world",
+        name: /monuments of the world/i,
         level: 1,
       });
       screen.debug();

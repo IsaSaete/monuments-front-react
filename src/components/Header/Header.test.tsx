@@ -7,11 +7,23 @@ describe("Given the Header component", () => {
       render(<Header />);
 
       const appTitle = screen.queryByRole("heading", {
-        name: "Monuments of the world",
+        name: /monuments of the world/i,
         level: 1,
       });
 
       expect(appTitle).toBeVisible();
+    });
+
+    test("Then it should show a 'Monuments' and 'Add monument' links", () => {
+      render(<Header />);
+
+      const monumentLink = screen.queryByRole("link", { name: /monuments/i });
+      const addMonumentLink = screen.queryByRole("link", {
+        name: /add monument/i,
+      });
+
+      expect(monumentLink).toBeVisible();
+      expect(addMonumentLink).toBeVisible();
     });
   });
 });
