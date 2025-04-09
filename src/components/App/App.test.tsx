@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import App from "./App";
 import { MemoryRouter } from "react-router";
+import App from "./App";
 
 describe("Given the App component", () => {
   describe("When it renders", () => {
