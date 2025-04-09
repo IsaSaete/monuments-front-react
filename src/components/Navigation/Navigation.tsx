@@ -3,15 +3,15 @@ import "./Navigation.css";
 
 const Navigation: React.FC = () => {
   return (
-    <nav>
-      <ul className="navigation">
+    <nav className="main-navigation">
+      <ul className="main-navigation__list">
         <li>
-          <NavLink className="navigation-link" to="/monuments">
+          <NavLink className="main-navigation__link" to="/monuments">
             Monuments
           </NavLink>
         </li>
         <li>
-          <NavLink className="navigation-link" to="/add-monument">
+          <NavLink className="main-navigation__link" to="/add-monument">
             Add monument
           </NavLink>
         </li>
