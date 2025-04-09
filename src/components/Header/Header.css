@@ -1,19 +1,27 @@
 .header {
   display: flex;
+  flex-direction: column;
   background-color: #174e4f;
   color: #f3e5c3;
   width: 100%;
-  padding: 10px 20px;
-  justify-content: center;
+  padding: 20px 20px;
+  align-items: center;
+  gap: 30px;
 
   @media (width > 500px) {
-    justify-content: flex-start;
-    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 30px 40px;
   }
 }
 
 .title {
   line-height: 1;
+
+  @media (width > 500px) {
+    display: inline-block;
+  }
 }
 
 .title__main {
