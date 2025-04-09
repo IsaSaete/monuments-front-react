@@ -11,11 +11,10 @@ describe("Given the App component", () => {
         </MemoryRouter>,
       );
 
-      const appTitle = screen.queryByRole("heading", {
+      const appTitle = screen.getByRole("heading", {
         name: /monuments of the world/i,
         level: 1,
       });
-      screen.debug();
 
       expect(appTitle).toBeVisible();
     });
