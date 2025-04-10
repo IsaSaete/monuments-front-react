@@ -3,7 +3,7 @@ import "./Navigation.css";
 
 const Navigation: React.FC = () => {
   return (
-    <nav className="main-navigation">
+    <nav>
       <ul className="main-navigation__list">
         <li>
           <NavLink className="main-navigation__link" to="/monuments">
