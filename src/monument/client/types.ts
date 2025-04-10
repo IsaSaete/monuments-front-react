@@ -1,7 +1,7 @@
-import MonumentDto from "../types";
+import Monument from "../types";
 
 interface MonumentClientStructure {
-  getMonument: () => Promise<MonumentDto[]>;
+  getMonument: () => Promise<Monument[]>;
 }
 
 export default MonumentClientStructure;
