@@ -1,0 +1,12 @@
+.monuments-list {
+  display: grid;
+  padding: 30px;
+  max-width: 1600px;
+  margin: 0 auto;
+  row-gap: 10px;
+  column-gap: 15px;
+
+  @media (width > 500px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
