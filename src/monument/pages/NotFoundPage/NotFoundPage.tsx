@@ -5,7 +5,7 @@ const NotFoundPage: React.FC = () => {
   return (
     <div className="image-containt">
       <img
-        src="src/monument/pages/NotFoundPage/error404.webp"
+        src="/error404.webp"
         alt="Drawing of an angry cat that has chewed the TV cable and on it appears an error 404, not found"
         width={990}
         height={560}
