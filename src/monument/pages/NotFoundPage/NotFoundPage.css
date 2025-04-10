@@ -1,0 +1,7 @@
+.image-containt {
+  display: flex;
+  justify-content: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #fbb82f;
+}
