@@ -1,4 +1,5 @@
 import mapMonumentsDtotoMonuments from "../dto/mappers";
+import MonumentDto from "../dto/types";
 import Monument from "../types";
 import MonumentClientStructure from "./types";
 
@@ -9,7 +10,7 @@ class MonumentClient implements MonumentClientStructure {
     const response = await fetch(`${this.apiUrl}/monuments`);
 
     const { monuments } = (await response.json()) as {
-      monuments: Monument[];
+      monuments: MonumentDto[];
     };
 
     return mapMonumentsDtotoMonuments(monuments);
