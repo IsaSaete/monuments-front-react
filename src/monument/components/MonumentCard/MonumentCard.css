@@ -1,19 +1,8 @@
-.containt {
-  display: grid;
-  justify-content: center;
-  padding: 20px;
-  max-width: 1600px;
-  margin: 0 auto;
-
-  @media (width > 500px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 .monument-card {
+  padding: 20px;
   border: 2px solid var(--secondary-color);
   border-radius: 5px;
-  padding: 20px;
+  height: 100%;
 }
 
 .monument-name {
