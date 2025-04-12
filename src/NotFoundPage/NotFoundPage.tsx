@@ -8,10 +8,10 @@ const NotFoundPage: React.FC = () => {
         OOPS! The page you requested could not be found
       </h2>
       <img
-        src="/images/page-not-found.png"
+        src="/images/not-found.png"
         alt="Drawing of an angry cat that has chewed the TV cable and on it appears an error 404, not found"
-        width={500}
-        height={500}
+        width={350}
+        height={350}
       />
     </div>
   );
