@@ -1,6 +1,5 @@
 import Monument from "../../types";
 import MonumentCard from "../MonumentCard/MonumentCard";
-import "./MonumentList.css";
 
 interface MonumenListProps {
   monuments: Monument[];
@@ -8,7 +7,7 @@ interface MonumenListProps {
 
 const MonumentList: React.FC<MonumenListProps> = ({ monuments }) => {
   return (
-    <ul className="monuments-list">
+    <ul className="monuments">
       {monuments.map((monument) => (
         <li key={monument.id}>
           <MonumentCard monument={monument} />

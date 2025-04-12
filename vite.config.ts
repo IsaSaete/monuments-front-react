@@ -5,6 +5,7 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
   plugins: [react()],
   test: {
+    root: "src",
     globals: true,
     reporters: ["verbose"],
     environment: "jsdom",
@@ -12,8 +13,8 @@ export default defineConfig({
     coverage: {
       provider: "v8",
       reporter: ["text", "json", "html"],
-      exclude: ["main.tsx"],
-      include: ["**/*.tsx"],
+      exclude: ["main.tsx", "**/types.ts", "vite-env.d.ts"],
+      include: ["**/*.tsx", "**/*.ts"],
     },
   },
 });
