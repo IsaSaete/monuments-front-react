@@ -1,5 +1,7 @@
+import MonumentForm from "../../components/MonumentForm/MonumentForm";
+
 const AddMonumentPage: React.FC = () => {
-  return <></>;
+  return <MonumentForm />;
 };
 
 export default AddMonumentPage;
