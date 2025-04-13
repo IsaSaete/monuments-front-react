@@ -3,14 +3,14 @@ import MonumentForm from "./MonumentForm";
 
 describe("Given a MonumentForm component", () => {
   describe("When it renders", () => {
-    test("Then it should show 'Add a new monuemnt' inside a heading", () => {
+    test("Then it should show 'Add a new monument' inside a heading", () => {
       render(<MonumentForm />);
 
-      const formTitle = screen.getByRole("heading", {
+      const pageTitle = screen.getByRole("heading", {
         name: /add a new monument/i,
       });
 
-      expect(formTitle).toBeVisible();
+      expect(pageTitle).toBeVisible();
     });
 
     test("Then it should show a 'Name' text box", () => {

@@ -3,7 +3,7 @@ import "./MonumentForm.css";
 
 const MonumentForm: React.FC = () => {
   return (
-    <div className="form-container">
+    <div className="main-container">
       <h2 className="form__title">Add a new monument</h2>
       <form className="form">
         <div className="form__group">
