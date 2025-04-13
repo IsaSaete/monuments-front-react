@@ -1,20 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import MonumentCard from "./MonumentCard";
-import Monument from "../../types";
+import { hombreAvion } from "../../fixtures";
 
 describe("Given the MonumentCard component", () => {
   describe("When it receives 'El hombre avión' monument", () => {
     test("Then it should show 'El hombre avión' inside a heading", () => {
-      const hombreAvion: Monument = {
-        name: "El hombre avión",
-        description: "",
-        imageUrl: "",
-        imageAlt: "",
-        id: "",
-        country: "",
-        city: "",
-      };
-
       render(<MonumentCard monument={hombreAvion} />);
 
       const monumentName = screen.getByRole("heading", {
@@ -22,6 +12,14 @@ describe("Given the MonumentCard component", () => {
       });
 
       expect(monumentName).toBeVisible();
+    });
+
+    test("Then it should show an image of 'El hombre avion' monument", () => {
+      render(<MonumentCard monument={hombreAvion} />);
+
+      const imageAltText = screen.getByAltText(hombreAvion.imageAlt);
+
+      expect(imageAltText).toBeVisible();
     });
   });
 });
