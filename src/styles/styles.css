@@ -31,3 +31,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+textarea,
+input {
+  border: none;
+  font: inherit;
+  outline: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+}
