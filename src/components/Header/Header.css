@@ -14,7 +14,6 @@
   gap: 30px;
 
   @media (width > 500px) {
-    display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
