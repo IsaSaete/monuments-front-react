@@ -13,7 +13,7 @@ describe("Given the NotFoundPage component", () => {
       expect(pageNotFoundTitle).toBeVisible();
     });
 
-    test("Then it should show an image of an angry cat", () => {
+    test("Then it should show an image of an angry cat and TV on it appear an 404", () => {
       render(<NotFoundPage />);
 
       const imageAltText = screen.getByAltText(
